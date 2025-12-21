@@ -1,43 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Proyecto CSS</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando el Universo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
     <header>
-      <h1>Bienvenido a Mi Proyecto CSS</h1>
-      <nav>
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#sobre-mi">Sobre Mí</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
+        <nav class="navbar">
+            <div class="logo">COSMOS</div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#planetas">Planetas</a></li>
+                <li><a href="#galaxias">Galaxias</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-      <section id="inicio">
-        <h2>Inicio</h2>
-        <p>
-          Esta es mi primera página con CSS. Aquí practico los conceptos
-          aprendidos.
-        </p>
-        <button>¡Haz clic aquí!</button>
-      </section>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Explorando el Universo</h1>
+                <p>Un viaje infinito a través del cosmos</p>
+                <button class="cta-button">Comenzar Exploración</button>
+            </div>
+        </section>
 
-      <section id="sobre-mi">
-        <h2>Sobre Mí</h2>
-        <p>Soy estudiante de Desarrollo Web y estoy aprendiendo HTML y CSS.</p>
-      </section>
+        <section id="planetas" class="planetas-section">
+            <h2>Nuestro Sistema Solar</h2>
+            <div class="planetas-grid">
+                <div class="planeta-card">
+                    <div class="planeta-img-container">
+                        <img src="https://images.unsplash.com/photo-1614732414444-096e5f1122d5?w=400&h=400&fit=crop" alt="Saturno" class="planeta-img">
+                    </div>
+                    <h3>Saturno</h3>
+                    <p>El señor de los anillos. Un gigante gaseoso con más de 80 lunas conocidas.</p>
+                </div>
+                <div class="planeta-card">
+                    <div class="planeta-img-container">
+                        <img src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=400&h=400&fit=crop" alt="Tierra" class="planeta-img">
+                    </div>
+                    <h3>Tierra</h3>
+                    <p>Nuestro hogar. El único planeta conocido que alberga vida.</p>
+                </div>
+                <div class="planeta-card">
+                    <div class="planeta-img-container">
+                        <img src="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?w=400&h=400&fit=crop" alt="Marte" class="planeta-img">
+                    </div>
+                    <h3>Marte</h3>
+                    <p>El planeta rojo. Próximo destino de la humanidad en el espacio.</p>
+                </div>
+                <div class="planeta-card">
+                    <div class="planeta-img-container">
+                        <img src="https://images.unsplash.com/photo-1614732484003-ef9881555dc3?w=400&h=400&fit=crop" alt="Júpiter" class="planeta-img">
+                    </div>
+                    <h3>Júpiter</h3>
+                    <p>El gigante del sistema solar. Podría contener todos los demás planetas en su interior.</p>
+                </div>
+            </div>
+        </section>
 
-      <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Puedes contactarme a través de mis redes sociales.</p>
-      </section>
+        <section id="galaxias" class="galaxias-section">
+            <h2>Galaxias Fascinantes</h2>
+            <div class="galaxias-container">
+                <article class="galaxia-item">
+                    <h3>Vía Láctea</h3>
+                    <p>Nuestra galaxia hogar, con más de 200 mil millones de estrellas. Una espiral barrada que nos lleva en un viaje cósmico.</p>
+                </article>
+                <article class="galaxia-item">
+                    <h3>Andrómeda</h3>
+                    <p>La galaxia vecina más grande. Se acerca a nosotros a 110 km/s y colisionará con la Vía Láctea en 4.5 mil millones de años.</p>
+                </article>
+                <article class="galaxia-item">
+                    <h3>Sombrero</h3>
+                    <p>Una galaxia espiral con un brillante núcleo. Su forma única la hace parecer un sombrero mexicano visto de perfil.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto-section">
+            <h2>Conecta con el Cosmos</h2>
+            <p>Únete a nuestra comunidad de exploradores espaciales</p>
+            <form class="contacto-form">
+                <input type="text" placeholder="Tu nombre" required>
+                <input type="email" placeholder="Tu correo" required>
+                <textarea placeholder="¿Qué te fascina del universo?" rows="4" required></textarea>
+                <button type="submit" class="submit-button">Enviar Mensaje</button>
+            </form>
+        </section>
     </main>
 
-  </body>
+    <footer>
+        <p>Explorando el Infinito © 2025 | Dani</p>
+    </footer>
+</body>
 </html>
