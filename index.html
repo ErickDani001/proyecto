@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explorando el Universo</title>
+    <title>Explorando el Universo - Proyecto Final</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,22 +14,46 @@
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#planetas">Planetas</a></li>
                 <li><a href="#galaxias">Galaxias</a></li>
+                <li><a href="#datos">Datos</a></li>
+                <li><a href="#galeria">Galería</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
 
     <main>
+        <!-- HERO SECTION -->
         <section id="inicio" class="hero">
             <div class="hero-content">
                 <h1>Explorando el Universo</h1>
                 <p>Un viaje infinito a través del cosmos</p>
                 <button class="cta-button">Comenzar Exploración</button>
             </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">13.8B</span>
+                    <span class="stat-label">Años del Universo</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2T</span>
+                    <span class="stat-label">Galaxias Estimadas</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">8</span>
+                    <span class="stat-label">Planetas en el Sistema Solar</span>
+                </div>
+            </div>
         </section>
 
+        <!-- PLANETAS SECTION CON GRID -->
         <section id="planetas" class="planetas-section">
             <h2>Nuestro Sistema Solar</h2>
+            <p class="section-description">Explora los fascinantes mundos que comparten nuestro vecindario cósmico</p>
             <div class="planetas-grid">
                 <div class="planeta-card">
                     <div class="planeta-img-container">
@@ -37,6 +61,10 @@
                     </div>
                     <h3>Saturno</h3>
                     <p>El señor de los anillos. Un gigante gaseoso con más de 80 lunas conocidas.</p>
+                    <div class="planeta-stats">
+                        <span>🌡️ -178°C</span>
+                        <span>📏 120,536 km</span>
+                    </div>
                 </div>
                 <div class="planeta-card">
                     <div class="planeta-img-container">
@@ -44,6 +72,10 @@
                     </div>
                     <h3>Tierra</h3>
                     <p>Nuestro hogar. El único planeta conocido que alberga vida.</p>
+                    <div class="planeta-stats">
+                        <span>🌡️ 15°C</span>
+                        <span>📏 12,742 km</span>
+                    </div>
                 </div>
                 <div class="planeta-card">
                     <div class="planeta-img-container">
@@ -51,49 +83,187 @@
                     </div>
                     <h3>Marte</h3>
                     <p>El planeta rojo. Próximo destino de la humanidad en el espacio.</p>
+                    <div class="planeta-stats">
+                        <span>🌡️ -63°C</span>
+                        <span>📏 6,779 km</span>
+                    </div>
                 </div>
                 <div class="planeta-card">
                     <div class="planeta-img-container">
                         <img src="https://images.unsplash.com/photo-1614732484003-ef9881555dc3?w=400&h=400&fit=crop" alt="Júpiter" class="planeta-img">
                     </div>
                     <h3>Júpiter</h3>
-                    <p>El gigante del sistema solar. Podría contener todos los demás planetas en su interior.</p>
+                    <p>El gigante del sistema solar. Podría contener todos los demás planetas.</p>
+                    <div class="planeta-stats">
+                        <span>🌡️ -145°C</span>
+                        <span>📏 139,820 km</span>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- GALAXIAS SECTION CON FLEXBOX -->
         <section id="galaxias" class="galaxias-section">
             <h2>Galaxias Fascinantes</h2>
+            <p class="section-description">Islas cósmicas conteniendo miles de millones de estrellas</p>
             <div class="galaxias-container">
                 <article class="galaxia-item">
+                    <div class="galaxia-icon"></div>
                     <h3>Vía Láctea</h3>
-                    <p>Nuestra galaxia hogar, con más de 200 mil millones de estrellas. Una espiral barrada que nos lleva en un viaje cósmico.</p>
+                    <p>Nuestra galaxia hogar, con más de 200 mil millones de estrellas. Una espiral barrada que nos lleva en un viaje cósmico a través del espacio intergaláctico.</p>
+                    <div class="galaxia-info">
+                        <span>Tipo: Espiral Barrada</span>
+                        <span>Diámetro: 100,000 años luz</span>
+                    </div>
                 </article>
                 <article class="galaxia-item">
+                    <div class="galaxia-icon"></div>
                     <h3>Andrómeda</h3>
-                    <p>La galaxia vecina más grande. Se acerca a nosotros a 110 km/s y colisionará con la Vía Láctea en 4.5 mil millones de años.</p>
+                    <p>La galaxia vecina más grande. Se acerca a nosotros a 110 km/s y colisionará con la Vía Láctea en 4.5 mil millones de años, creando una nueva supergalaxia.</p>
+                    <div class="galaxia-info">
+                        <span>Tipo: Espiral</span>
+                        <span>Distancia: 2.5 millones años luz</span>
+                    </div>
                 </article>
                 <article class="galaxia-item">
+                    <div class="galaxia-icon"></div>
                     <h3>Sombrero</h3>
-                    <p>Una galaxia espiral con un brillante núcleo. Su forma única la hace parecer un sombrero mexicano visto de perfil.</p>
+                    <p>Una galaxia espiral con un brillante núcleo. Su forma única la hace parecer un sombrero mexicano visto de perfil, con un prominente bulbo central.</p>
+                    <div class="galaxia-info">
+                        <span>Tipo: Espiral</span>
+                        <span>Distancia: 28 millones años luz</span>
+                    </div>
                 </article>
             </div>
         </section>
 
+        <!-- DATOS CÓSMICOS CON GRID -->
+        <section id="datos" class="datos-section">
+            <h2>Datos Cósmicos</h2>
+            <div class="datos-grid">
+                <div class="dato-card">
+                    <div class="dato-icon"></div>
+                    <h3>299,792 km/s</h3>
+                    <p>Velocidad de la luz en el vacío</p>
+                </div>
+                <div class="dato-card">
+                    <div class="dato-icon"></div>
+                    <h3>100-400B</h3>
+                    <p>Estrellas en nuestra galaxia</p>
+                </div>
+                <div class="dato-card">
+                    <div class="dato-icon"></div>
+                    <h3>4M Soles</h3>
+                    <p>Masa del agujero negro central</p>
+                </div>
+                <div class="dato-card">
+                    <div class="dato-icon"></div>
+                    <h3>5,000+</h3>
+                    <p>Exoplanetas descubiertos</p>
+                </div>
+                <div class="dato-card">
+                    <div class="dato-icon"></div>
+                    <h3>93B</h3>
+                    <p>Años luz de diámetro observable</p>
+                </div>
+                <div class="dato-card">
+                    <div class="dato-icon"></div>
+                    <h3>68%</h3>
+                    <p>Energía oscura en el universo</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERÍA CON GRID AVANZADO -->
+        <section id="galeria" class="galeria-section">
+            <h2>Galería Espacial</h2>
+            <p class="section-description">Imágenes que capturan la belleza del cosmos</p>
+            <div class="galeria-grid">
+                <div class="galeria-item galeria-item-large">
+                    <img src="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=800&h=600&fit=crop" alt="Vía Láctea">
+                    <div class="galeria-overlay">
+                        <h3>Vía Láctea</h3>
+                        <p>Vista nocturna de nuestra galaxia</p>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=400&h=400&fit=crop" alt="Nebulosa">
+                    <div class="galeria-overlay">
+                        <h3>Nebulosa</h3>
+                        <p>Cuna de estrellas</p>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=400&h=400&fit=crop" alt="Eclipse">
+                    <div class="galeria-overlay">
+                        <h3>Eclipse Solar</h3>
+                        <p>Danza cósmica</p>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?w=400&h=400&fit=crop" alt="Estrellas">
+                    <div class="galeria-overlay">
+                        <h3>Campo Estelar</h3>
+                        <p>Millones de soles</p>
+                    </div>
+                </div>
+                <div class="galeria-item galeria-item-wide">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=400&fit=crop" alt="Tierra desde el espacio">
+                    <div class="galeria-overlay">
+                        <h3>Tierra desde el Espacio</h3>
+                        <p>Nuestro hogar azul</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO SECTION CON FLEXBOX -->
         <section id="contacto" class="contacto-section">
-            <h2>Conecta con el Cosmos</h2>
-            <p>Únete a nuestra comunidad de exploradores espaciales</p>
-            <form class="contacto-form">
-                <input type="text" placeholder="Tu nombre" required>
-                <input type="email" placeholder="Tu correo" required>
-                <textarea placeholder="¿Qué te fascina del universo?" rows="4" required></textarea>
-                <button type="submit" class="submit-button">Enviar Mensaje</button>
-            </form>
+            <div class="contacto-container">
+                <div class="contacto-info">
+                    <h2>Conecta con el Cosmos</h2>
+                    <p>Únete a nuestra comunidad de exploradores espaciales y mantente al día con los últimos descubrimientos del universo.</p>
+                    
+                </div>
+                <form class="contacto-form">
+                    <input type="text" placeholder="Tu nombre" required>
+                    <input type="email" placeholder="Tu correo" required>
+                    <input type="text" placeholder="Asunto">
+                    <textarea placeholder="¿Qué te fascina del universo?" rows="5" required></textarea>
+                    <button type="submit" class="submit-button">Enviar Mensaje al Cosmos</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>Explorando el Infinito © 2025 | Dani</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>COSMOS</h4>
+                <p>Explorando el infinito desde 2025</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#planetas">Planetas</a></li>
+                    <li><a href="#galaxias">Galaxias</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Explorando el Infinito © 2025 | Dani</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
