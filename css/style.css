@@ -868,3 +868,281 @@ animation: fadeIn 0.6s ease-out;
     outline: 2px solid var(--color-accent);
     outline-offset: 2px;
 }
+
+/* ============================================
+   HERENCIA APLICADA AL CONTENIDO 
+============================================ */
+
+/* HERENCIA EN BODY - Se hereda a TODOS los elementos */
+body {
+    color: var(--color-text); /* Se hereda automáticamente */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; /* Se hereda */
+    line-height: 1.6; /* Se hereda */
+}
+
+/* HERENCIA EN HEADER */
+header {
+    font-family: inherit; /* Hereda explícitamente de body */
+}
+
+.navbar {
+    color: inherit; /* Hereda el color */
+}
+
+.logo {
+    font-family: inherit; /* Hereda la fuente del padre */
+    color: var(--color-accent); /* Sobreescribe el color heredado */
+}
+
+.nav-menu a {
+    color: var(--color-text); /* Hereda y luego especifica */
+    font-family: inherit; /* Usa inherit explícitamente */
+}
+
+/* HERENCIA EN HERO SECTION */
+.hero {
+    text-align: center; /* Este text-align se hereda a los hijos */
+}
+
+.hero-content {
+    color: inherit; /* Hereda el color de body */
+    text-align: inherit; /* Hereda el centrado del padre .hero */
+}
+
+.hero-content h1 {
+    /* Hereda automáticamente: color, text-align, font-family */
+    /* Solo sobreescribe lo que necesita cambiar */
+}
+
+.hero-content p {
+    /* Hereda color y text-align automáticamente */
+    font-size: 1.25rem; /* Solo especifica lo diferente */
+}
+
+/* HERENCIA EN HERO STATS */
+.hero-stats {
+    font-family: inherit; /* Hereda de body */
+}
+
+.stat-item {
+    text-align: center; /* Se hereda a stat-number y stat-label */
+}
+
+.stat-number {
+    font-family: inherit; /* Hereda la fuente */
+    text-align: inherit; /* Hereda el centrado del padre */
+}
+
+.stat-label {
+    text-align: inherit; /* También hereda el centrado */
+    color: var(--color-text-dark); /* Sobreescribe color heredado */
+}
+
+/* HERENCIA EN PLANETAS */
+.planetas-section h2 {
+    color: var(--color-accent); /* Sobreescribe color heredado de body */
+    text-align: center; /* Este text-align NO se hereda (solo aplica aquí) */
+}
+
+.section-description {
+    text-align: inherit; /* Hereda text-align del padre */
+    color: inherit; /* Hereda color */
+}
+
+.planeta-card {
+    color: inherit; /* Hereda color de body */
+    text-align: center; /* Se hereda a h3 y p dentro de la card */
+}
+
+.planeta-card h3 {
+    /* Hereda automáticamente: color, text-align, font-family */
+    color: inherit; /* Usa explícitamente inherit */
+}
+
+.planeta-card p {
+    /* Hereda text-align del padre .planeta-card */
+    color: var(--color-text-dark); /* Sobreescribe color heredado */
+}
+
+.planeta-stats {
+    font-size: 0.85rem; /* Se hereda a los spans hijos */
+}
+
+.planeta-stats span {
+    color: inherit; /* Hereda el color del padre */
+}
+
+/* HERENCIA EN GALAXIAS */
+.galaxias-section {
+    line-height: 1.6; /* Se hereda a todos los elementos internos */
+}
+
+.galaxia-item {
+    color: var(--color-text); /* Se hereda a h3, p, spans */
+}
+
+.galaxia-item h3 {
+    color: var(--color-accent); /* Sobreescribe el color heredado */
+    font-weight: inherit; /* Hereda font-weight */
+}
+
+.galaxia-item p {
+    color: var(--color-text-dark); /* Sobreescribe heredado */
+    line-height: inherit; /* Hereda explícitamente */
+}
+
+.galaxia-info {
+    font-size: 0.9rem; /* Se hereda a los spans internos */
+    color: var(--color-text-dark); /* Se hereda */
+}
+
+.galaxia-info span {
+    color: inherit; /* Hereda del padre .galaxia-info */
+    font-size: inherit; /* Hereda el tamaño */
+}
+
+/* HERENCIA EN DATOS CÓSMICOS */
+.dato-card {
+    text-align: center; /* Se hereda a h3 y p */
+    color: var(--color-text); /* Se hereda */
+}
+
+.dato-card h3 {
+    color: var(--color-accent); /* Sobreescribe heredado */
+    text-align: inherit; /* Hereda centrado explícitamente */
+}
+
+.dato-card p {
+    color: var(--color-text-dark); /* Sobreescribe heredado */
+    text-align: inherit; /* Hereda centrado */
+    font-size: inherit; /* Hereda tamaño */
+}
+
+/* HERENCIA EN GALERÍA */
+.galeria-overlay {
+    color: white; /* Se hereda a h3 y p */
+}
+
+.galeria-overlay h3 {
+    color: inherit; /* Hereda el blanco del padre */
+    font-family: inherit; /* Hereda fuente */
+}
+
+.galeria-overlay p {
+    /* Hereda color blanco pero lo sobreescribe */
+    color: var(--color-text-dark);
+}
+
+/* HERENCIA EN CONTACTO */
+.contacto-info h2 {
+    color: var(--color-accent); /* Sobreescribe heredado */
+}
+
+.contacto-info p {
+    color: inherit; /* Hereda de .contacto-info */
+    line-height: inherit; /* Hereda espaciado */
+}
+
+.detail-item {
+    color: var(--color-text-dark); /* Se hereda a los spans internos */
+}
+
+/* HERENCIA FORZADA EN FORMULARIOS (importante!) */
+.contacto-form input,
+.contacto-form textarea {
+    font-family: inherit; /* Los inputs NO heredan font-family por defecto */
+    color: inherit; /* Forzamos heredar color */
+    font-size: inherit; /* Forzamos heredar tamaño */
+}
+
+/* HERENCIA EN BOTONES */
+.cta-button {
+    font-family: inherit; /* Hereda de body */
+    font-size: 1rem;
+    cursor: inherit; /* Hereda cursor */
+}
+
+.submit-button {
+    font-family: inherit; /* Hereda fuente */
+    font-size: inherit; /* Hereda tamaño */
+}
+
+/* HERENCIA EN FOOTER */
+footer {
+    color: var(--color-text-dark); /* Se hereda a todos los elementos */
+    font-size: 0.9rem; /* Se hereda */
+}
+
+.footer-section h4 {
+    color: var(--color-accent); /* Sobreescribe heredado */
+    font-size: initial; /* USA INITIAL - vuelve al tamaño del navegador */
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    color: inherit; /* Heredan el color de footer */
+    font-size: inherit; /* Heredan el tamaño */
+}
+
+.footer-section a:hover {
+    color: var(--color-accent); /* Sobreescribe en hover */
+}
+
+.footer-bottom {
+    text-align: center; /* NO se hereda a otros elementos */
+    color: inherit; /* Hereda color de footer */
+}
+
+
+/* MARGIN - NO se hereda */
+section {
+    margin: 0 auto; /* Cada sección debe especificar su margin */
+}
+
+.planeta-card {
+    margin: 0; /* NO hereda margin del padre */
+}
+
+/* PADDING - NO se hereda */
+.navbar {
+    padding: var(--spacing-sm) var(--spacing-md); /* Debe especificarse */
+}
+
+.planeta-card {
+    padding: var(--spacing-md); /* NO hereda padding */
+}
+
+/* BORDER - NO se hereda */
+.planeta-card {
+    border: 1px solid rgba(74, 144, 226, 0.1); /* Debe especificarse */
+}
+
+.galaxia-item {
+    border-left: 3px solid var(--color-accent); /* NO hereda del padre */
+}
+
+/* BACKGROUND - NO se hereda */
+.planetas-section {
+    background: rgba(26, 31, 58, 0.3); /* Debe especificarse */
+}
+
+.planeta-card {
+    background: rgba(255, 255, 255, 0.02); /* NO hereda del padre */
+}
+
+/* WIDTH y HEIGHT - NO se heredan */
+.planeta-img-container {
+    width: 100%; /* Debe especificarse */
+    height: 200px; /* Debe especificarse */
+}
+
+/* DISPLAY - NO se hereda */
+.navbar {
+    display: flex; /* Debe especificarse */
+}
+
+.planetas-grid {
+    display: grid; /* NO hereda display del padre */
+}
+
