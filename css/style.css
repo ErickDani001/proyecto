@@ -1200,3 +1200,18 @@ section {
 .contacto-details {
     align-items: flex-start;
 }
+
+/* COMPLEMENTO POSITION */
+
+.planeta-img-container {
+    position: relative;
+}
+
+.badge {
+    position: relative;
+}
+
+.galeria-item {
+    position: relative;
+    z-index: 1;
+}
